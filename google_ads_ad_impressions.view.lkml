@@ -9,8 +9,8 @@ view: google_ads_ad_impressions {
   extends: [ad_metrics_base, date_base, period_base, date_primary_key_base]
 
   derived_table: {
-    distribution: "_date"
-    sortkeys: ["_date"]
+#    distribution: "_date"
+#    sortkeys: ["_date"]
     datagroup_trigger: adwords_etl_datagroup
     explore_source: ad_impressions_ad_group {
       column: _date { field: fact.date_date }
